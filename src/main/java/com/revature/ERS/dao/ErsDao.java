@@ -6,10 +6,11 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.revature.ERS.ERSDaoInterface;
 import com.revature.ERS.beans.Reimbursement;
 import com.revature.ERS.util.ConnectionUtil;
 
-public class ErsDao {
+public class ErsDao implements ERSDaoInterface {
 	public List<Reimbursement> getEmployeeReimbursments(int id){
 		PreparedStatement prepstate;
 		List<Reimbursement> reimburse = new ArrayList<>();
