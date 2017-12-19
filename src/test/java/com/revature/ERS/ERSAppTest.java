@@ -2,6 +2,7 @@ package com.revature.ERS;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
@@ -58,13 +59,4 @@ public class ERSAppTest {
 		assertEquals(false, ers.doCommand("create", 3, dao));
 		assertEquals(false, ers.doCommand("kdfjdakjf", 3, dao));
 	}
-	@Test
-	public void testView() {
-		ERSApp ers = new ERSApp();
-		ERSDaoInterface dao = new ErsDummyDao();
-		
-	}
-	
-	
-
 }

@@ -56,7 +56,7 @@ public class ERSApp
     		}		
     }
    
-    private void view(int log, ERSDaoInterface dao) {
+    public void view(int log, ERSDaoInterface dao) {
     		List<Reimbursement> ret = new ArrayList<>();
     		Scanner sc = new Scanner(System.in);
     		if(dao.isManager(log)) {
